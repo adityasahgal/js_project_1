@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Name Card -->
+    <div class=" flex item-center  justify-center relative bg-black h-[100vh] w-[100vw] ">
+
+        <div class="absolute circle bg-indigo-500 w-36 rounded-full h-36 justify-center bottom-36 blur-lg right-96 transition ease-in-out delay-150 cursor-pointer animate-bounce"></div>
+        <div class="ju absolute circle bg-red-400 w-32 rounded-full h-32 justify-center top-32 blur-lg left-96 transition ease-in-out delay-150  cursor-pointer delay-150 animate-pulse scale-100"></div>
+
+        <div class="hover:cursor-pointer bg-[#343431] top-32 bg-blend-lighten hover:bg-blend-darken  absolute justify-center text-white item-center border rounded-md border-gray-300 h-80 w-72  ">
+            <div class=" flex justify-center item-center mt-8"> 
+                <img class="rounded-full h-20  top-10 " src="Aditya.jpg" alt="">
+            </div>
+            <h2 class="justify-center text-bold item-center text-2xl flex mt-2">Aditya Sahgal</h2>
+            <p class="justify-center item-center text-gray-300  text-bold flex mt-10">Full Stack Developer</p>
+            <div class="justify-center item-center text-gray-300 flex flex-row gap-4 mt-10">
+                <Button onclick="openModal" id="Btn" class="border hover:bg-gray-200 hover:duration-300 hover:text-black rounded-sm item-center justify-center p-2"><i class="fa-solid fa-share"></i> Share My Profile</Button>
+                <Button class="border hover:bg-gray-200 hover:duration-300 hover:text-black rounded-sm item-center justify-center p-2">Follow Me</Button>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        
+        <div id="modal" class="hidden hover:cursor-pointer bg-[#242321] bg:opacity-75 top-48  hover:bg-blend-darken  absolute justify-center text-white item-center border rounded-md border-gray-300 h-40 w-96 ">
+            <div>
+                <div class="flex justify-between border-b  p-2">
+                    
+                    <h2 class="text-2xl text-bold">Share My Profile </h2>
+                    <i class="fa-solid fa-xmark close" class="h-6 w-6" onclick="closeModal"></i>
+                    
+                </div>
+                <h3 class="text-lg mt-2 pl-2 text-bold">Share this via</h3>
+                <div class="flex  justify-evenly mt-2 item-center">
+                    <a href="#" class=" rounded-full h-10 w-10 justify-center pt-3 flex border border-blue-500 hover:bg-blue-500">
+                        <i class="fa-brands fa-linkedin" class="size-16"></i>
+                    </a>
+                    <a href="#" class=" rounded-full h-10 w-10 justify-center pt-3 flex border border-blue-300 hover:bg-blue-500">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class=" rounded-full h-10 w-10 justify-center pt-3 flex border border-green-500 hover:bg-green-500">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class=" rounded-full h-10 w-10 justify-center pt-3 flex border border-red-500 hover:bg-red-600">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class=" rounded-full h-10 w-10 justify-center pt-3 flex border border-blue-600 hover:bg-blue-500">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    <script src="https://kit.fontawesome.com/87d8830661.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
